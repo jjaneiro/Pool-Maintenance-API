@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="AV-SaveOriginalVerb">
+    <DisplayName>AV-SaveOriginalVerb</DisplayName>
+    <IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+    <AssignVariable>
+        <Name>original_verb</Name>
+        <Ref>request.verb</Ref>
+    </AssignVariable>
+</AssignMessage>

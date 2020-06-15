@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SpikeArrest async="false" continueOnError="false" enabled="true" name="Spike-Arrest">
+    <DisplayName>Spike-Arrest</DisplayName>
+    <Properties/>
+    <Identifier ref="request.queryparam.apikey"/>
+    <Rate>12pm</Rate>
+</SpikeArrest>

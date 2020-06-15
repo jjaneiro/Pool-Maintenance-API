@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProxyEndpoint name="default">
+    <Description/>
+    <FaultRules/>
+    <PreFlow name="PreFlow">
+        <Request>
+            <Step>
+                <Name>AV-SaveOriginalVerb</Name>
+            </Step>
+            <Step>
+                <Name>RC-SamePoolImage</Name>
+            </Step>
+        </Request>
+        <Response>
+            <Step>
+                <Name>AV-RestoreOriginalVerb</Name>
+            </Step>
+        </Response>
+    </PreFlow>
+    <PostFlow name="PostFlow">
+        <Request/>
+        <Response/>
+    </PostFlow>
+    <Flows>
+        <Flow name="/analyzePhoto">
+            <Description/>
+            <Request>
+                <Step>
+                    <Name>Verify-API-Key</Name>
+                </Step>
+                <Step>
+                    <Name>EV-GetImageURL</Name>
+                </Step>
+                <Step>
+                    <Name>KVM-ReadAPIVisionKey</Name>
+                </Step>
+                <Step>
+                    <Name>AM-PrepareVisionAPIReq</Name>
+                </Step>
+            </Request>
+            <Response>
+                <Step>
+                    <Name>JS-WaterQuality</Name>
+                </Step>
+                <Step>
+                    <Name>JSON-to-XML</Name>
+                </Step>
+                <Step>
+                    <Condition>triggerError equals "true"</Condition>
+                    <Name>Not-a-Pool</Name>
+                </Step>
+            </Response>
+            <Condition>(proxy.pathsuffix MatchesPath "/analyzePhoto") and (request.verb = "GET")</Condition>
+        </Flow>
+        <Flow name="OptionsPreFlight">
+            <Description>OptionsPreFlight</Description>
+            <Request/>
+            <Response>
+                <Step>
+                    <Name>Set-CORS-Response-Headers</Name>
+                </Step>
+            </Response>
+            <Condition>request.verb == "OPTIONS"</Condition>
+        </Flow>
+    </Flows>
+    <HTTPProxyConnection>
+        <BasePath>/maintenance-recognition</BasePath>
+        <Properties/>
+        <VirtualHost>default</VirtualHost>
+        <VirtualHost>secure</VirtualHost>
+    </HTTPProxyConnection>
+    <RouteRule name="NoRoute">
+        <Condition>request.verb == "OPTIONS"</Condition>
+    </RouteRule>
+    <RouteRule name="default">
+        <TargetEndpoint>default</TargetEndpoint>
+    </RouteRule>
+</ProxyEndpoint>

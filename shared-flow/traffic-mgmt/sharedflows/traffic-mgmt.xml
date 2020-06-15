@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SharedFlowBundle revision="2" name="security-traffic-mgmt">
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1588006573132</CreatedAt>
+    <CreatedBy>janeiro@google.com</CreatedBy>
+    <Description>undefined</Description>
+    <DisplayName>security-traffic-mgmt</DisplayName>
+    <LastModifiedAt>1588363961796</LastModifiedAt>
+    <LastModifiedBy>janeiro@google.com</LastModifiedBy>
+    <ManifestVersion>SHA-512:555aede025d6207330da6c7132ea5093188efaa63a33af00f946b8b792b3da15d6706762ced40e705b968e3ebecbd1eb4c05c85e9b9b37e794c98770e77620db</ManifestVersion>
+    <Policies>
+        <Policy>Quota</Policy>
+        <Policy>Spike-Arrest</Policy>
+    </Policies>
+    <Resources/>
+    <Spec></Spec>
+    <subType>SharedFlow</subType>
+    <SharedFlows>
+        <SharedFlow>default</SharedFlow>
+    </SharedFlows>
+</SharedFlowBundle>

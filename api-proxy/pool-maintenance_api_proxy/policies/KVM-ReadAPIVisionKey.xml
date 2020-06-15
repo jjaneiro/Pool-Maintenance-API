@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<KeyValueMapOperations async="false" continueOnError="false" enabled="true" name="KVM-ReadAPIVisionKey" mapIdentifier="APIVisionKey">
+    <DisplayName>KVM-ReadAPIVisionKey</DisplayName>
+    <Get assignTo="myVisionApiKey" index="1">
+        <Key>
+            <Parameter>visionApiKey</Parameter>
+        </Key>
+    </Get>
+    <Scope>environment</Scope>
+</KeyValueMapOperations>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="AM-PrepareVisionAPIReq">
+    <DisplayName>AM-PrepareVisionAPIReq</DisplayName>
+    <Properties/>
+    <Add>
+        <QueryParams>
+            <QueryParam name="key">{myVisionApiKey}</QueryParam>
+        </QueryParams>
+    </Add>
+    <Set>
+        <Payload contentType="application/json">
+            {
+              "requests":[
+                {
+                  "image":{
+                    "source":{
+                      "imageUri":"{imageUrl4ir}"
+                    }
+                  },
+                  "features":[
+                    {
+                      "type":"IMAGE_PROPERTIES",
+                      "maxResults":1
+                    },
+                    {
+                        "type": "LABEL_DETECTION",
+                        "maxResults": 5,
+                    }
+                  ]
+                }
+              ]
+            }
+        </Payload>
+        <Verb>POST</Verb>
+    </Set>
+    <Remove>
+        <Headers>
+            <Header name="hdurl"/>
+        </Headers>
+        <QueryParams>
+            <QueryParam name="apikey"/>
+        </QueryParams>
+    </Remove>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="false" transport="http" type="request"/>
+</AssignMessage>

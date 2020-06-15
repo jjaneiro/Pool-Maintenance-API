@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="3" name="PoolMaintenance">
+    <Basepaths>/handwriting-recognition</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1565341022634</CreatedAt>
+    <CreatedBy>janeiro@google.com</CreatedBy>
+    <Description>Use the Google Vision API to digitalize cursive texts.
+</Description>
+    <DisplayName>Auto-Maintenance-Recognition</DisplayName>
+    <LastModifiedAt>1591772105906</LastModifiedAt>
+    <LastModifiedBy>janeiro@google.com</LastModifiedBy>
+    <ManifestVersion>SHA-512:f27a12ce69ecfacec2eef7a8615922efe7ae97448fa245baa407c2c010c4d6b515088e51d020f183d93ad33efb80da045f08331916fa20c65eea7f23b51bf5f1</ManifestVersion>
+    <Policies>
+        <Policy>AM-ChangePathSuffix</Policy>
+        <Policy>AM-PrepareVisionAPIReq</Policy>
+        <Policy>AV-RestoreOriginalVerb</Policy>
+        <Policy>AV-SaveOriginalVerb</Policy>
+        <Policy>EV-GetImageURL</Policy>
+        <Policy>JS-WaterQuality</Policy>
+        <Policy>JSON-to-XML</Policy>
+        <Policy>KVM-ReadAPIVisionKey</Policy>
+        <Policy>Not-a-Pool</Policy>
+        <Policy>RC-SamePoolImage</Policy>
+        <Policy>Set-CORS-Response-Headers</Policy>
+        <Policy>Verify-API-Key</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>openapi://association.json</Resource>
+        <Resource>jsc://JS-WaterQuality.js</Resource>
+    </Resources>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest name="manifest">
+    <Policies>
+        <VersionInfo resourceName="AM-ChangePathSuffix" version="SHA-512:0b3a92231ba2ec22425c6ae53ad2ec39f072062599197f8e8bc6b2c7b0d2743033649f1845a1fd6bf386e9cf9e2c3a550ba90408b8b41b37a3263648be9a9047"/>
+        <VersionInfo resourceName="AM-PrepareVisionAPIReq" version="SHA-512:edcac718d91bd175b98b518c431591cd7053fbe26704b565eb0e33d43904dc350dedaaee68dcf7f9430de4abb9e4e6550acd67260030300dfa68d3a20c4763f4"/>
+        <VersionInfo resourceName="AV-RestoreOriginalVerb" version="SHA-512:cbe71b63b5b063b220030792e1a764e9e28cbc083e7d8d72a6888ba9ac356d7681b2b3a2540bb3dd5e8ad81ded617925f8348b6498bc33b008a1370360f1ef6e"/>
+        <VersionInfo resourceName="AV-SaveOriginalVerb" version="SHA-512:12f3785a987db09cc7ecbcc22253c7bbeb3d66c60f28b449bb7c2ae8c31f12d2711868281fd87b1f064e427ea1563be0f177bd76d6b177264f575eeab1c56683"/>
+        <VersionInfo resourceName="EV-GetImageURL" version="SHA-512:6212dffda60886e82276359e9caa598dee714c193955385295dff8229f57bd433f77b7157226ec4d6f27035d1316c2de1d9abd2feb015a6a66427138f1dfde8c"/>
+        <VersionInfo resourceName="JS-WaterQuality" version="SHA-512:0761dcbb72b6ff4172dba8fbc4de656825b44eeb4ea199a0cbf739a424eef2c8ede72c4add6c581c812e6c063d3f441c9114d9852fa3c428a78c9dd8d433a0e8"/>
+        <VersionInfo resourceName="JSON-to-XML" version="SHA-512:d0b45b514fe148e7492663b010b3e73742862855ec5385de09c150dae92f63fbb4a575c0d5d48f6dd6f2d66f2b5c2b856b5d363e4cc23f283931c88178827211"/>
+        <VersionInfo resourceName="KVM-ReadAPIVisionKey" version="SHA-512:085a91a319cea548ed20667b749d801a32f38a173b89bb5df6d2779b98001d51bdaaa96bd0f07c2721c3c39b3bfa9a8e9b5953aedc70391f72e46d74fac642ac"/>
+        <VersionInfo resourceName="Not-a-Pool" version="SHA-512:df10bb520f35b0f49cffa80a81ec0d5c9527dc62ff26ac6bf2a5da3258cbe03108c30798def5e8f9205409efe1f5c2de6802ef8b771ec1ffa6b352d49027d237"/>
+        <VersionInfo resourceName="RC-SamePoolImage" version="SHA-512:35da5eab85a23cd565d73c8f8160b34fb0ab0d023cacf170b6b620a52fe57ef81dead48cf718e50363c63a1404f7de60445f841384c3c86d88c3d8b61c3fdb9d"/>
+        <VersionInfo resourceName="Set-CORS-Response-Headers" version="SHA-512:911e317c37a503823a887f65dc43a3c1085b30abfefffb1426eeb92ef78ecf2d8b820ddf268b24e28193464a495c27a2320254dda598c6364b9589ade63a485c"/>
+        <VersionInfo resourceName="Verify-API-Key" version="SHA-512:6cc90d8f102003c2a3122242902885575769f0c45c2867c26c9cad4da5aae38be27599e5b51325ba6c63fae14e89cb4bf9f4b46b83e85cce0db66ae6704c7eba"/>
+    </Policies>
+    <ProxyEndpoints>
+        <VersionInfo resourceName="default" version="SHA-512:efc0de21e1f51cb35ce3487fb27e5c28664b2daef03bf2fcb356e5cc7bded328c5d9d1f51c4d67be011e9860f1ee877a186529740f6e14e7a1a47f1b4a4ef316"/>
+    </ProxyEndpoints>
+    <Resources>
+        <VersionInfo resourceName="jsc://JS-WaterQuality.js" version="SHA-512:f1fa5f57a3a2178411dc6dbdece3a2264eda02792b040caab9735a3e579c7dd8d35e66aacfe8e7733248381a11e7202961098078a247c29c4b6c9baa6f2d413e"/>
+        <VersionInfo resourceName="openapi://association.json" version="SHA-512:864b35638ae46a011e966052b2350cfcd09a6c6e4160f2f796d73df56a5a05dee9af623d01133f7688bacecc55a6e8da26c9b998b90ea5b56f79fdfcbf88137d"/>
+    </Resources>
+    <SharedFlows/>
+    <TargetEndpoints>
+        <VersionInfo resourceName="default" version="SHA-512:6459da0470f37156253b8d8bd10e9b8fd065f6a5cbcea1c27f069244966d44a4e493c0db39c7b2517cdbafd431b0e5c6e4b584f1978fc3b57f13bd59e9b1ad0f"/>
+    </TargetEndpoints>
+</Manifest>

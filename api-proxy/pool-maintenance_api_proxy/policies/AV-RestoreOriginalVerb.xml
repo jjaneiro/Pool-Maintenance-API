@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="AV-RestoreOriginalVerb">
+    <DisplayName>AV-RestoreOriginalVerb</DisplayName>
+    <Properties/>
+    <IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+    <AssignVariable>
+        <Name>request.verb</Name>
+        <Ref>original_verb</Ref>
+    </AssignVariable>
+</AssignMessage>

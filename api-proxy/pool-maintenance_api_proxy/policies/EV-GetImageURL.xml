@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ExtractVariables async="false" continueOnError="false" enabled="true" name="EV-GetImageURL">
+    <DisplayName>EV-GetImageURL</DisplayName>
+    <Source>request</Source>
+    <Header name="imageUrl">
+        <Pattern ignoreCase="true">{imageUrl4ir}</Pattern>
+    </Header>
+</ExtractVariables>

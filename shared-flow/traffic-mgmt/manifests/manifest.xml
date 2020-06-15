@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest name="manifest">
+    <Policies>
+        <VersionInfo resourceName="Quota" version="SHA-512:2a1ebfc99ac927ad6fca8e3b16704947c6a2e6dee4b5edc05d25bb49a8e8f9537070b27fc75eef89ec701181413e972e0cb4270614e7d6f390551ee259350e0b"/>
+        <VersionInfo resourceName="Spike-Arrest" version="SHA-512:1cb729a443d16cc50a14c85d73104cdd2028cdae265c72bfe2326f2c585649f94284c6b64f8abb6bbfe12a62c77fe8e7abf44381b2ebc98b7b1f5dd42d291614"/>
+    </Policies>
+    <ProxyEndpoints/>
+    <Resources/>
+    <SharedFlows>
+        <VersionInfo resourceName="default" version="SHA-512:775ac8e5972302131d85bae051d9ed465e9b95917391514842287c6cdb0da1222adf2e6b9c018158311cf4148158532b63049522e2b26b1c43eea0487f3876c5"/>
+    </SharedFlows>
+    <TargetEndpoints/>
+</Manifest>

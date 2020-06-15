@@ -1,0 +1,57 @@
+# Example YAML to get you started quickly.
+# Be aware that YAML has indentation based coping.
+# Code completion support is available so start typing for available options.
+swagger: '2.0'
+
+# This is your document metadata
+info:
+  version: "0.0.1"
+  title: Pool Maintenance Spec
+  description: |
+    Use the Google Vision API to analyse the quality of the water of a pool.
+
+host:
+  ORG-ENV.apigee.net
+
+schemes:
+  - http
+  - https
+  
+basePath: /maintenance-recognition
+
+securityDefinitions:
+  APIKeyQuery:
+    type: "apiKey"
+    in: "query"
+    name: "apikey"
+security:
+  - APIKeyQuery: []
+
+# Describe your paths here
+paths:
+  # This is a path endpoint. Change it.
+  /analyzePhoto:
+    # This is a HTTP operation
+    get:
+      # Describe this verb here. Note: you can use markdown
+      description: |
+        Optional query param of **size** determines
+        size of returned array
+      # This is array of GET operation parameters:
+      parameters:
+        # An example parameter that is in query and is required
+        - in: header
+          name: imageUrl
+          type: string
+          required: true
+        - in: query
+          name: apikey
+          type: string
+          required: true
+      # Expected responses for this operation:
+      responses:
+        # Response code
+        200:
+          description: Successful response
+          # A schema describing your response object.
+          # Use JSON Schema format
